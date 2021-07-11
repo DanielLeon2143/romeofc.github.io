@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--  use ! to get started 
+    it takes care of writting
+    the standard starting html -->   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romeo Santos Fan Club</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+    <div class="navbar"> 
+        <div class="container">
+            <a class="logo" href="https://www.youtube.com/watch?v=Lg_Pn45gyMs"> <span>Romeo Santos</span> FC</a>
+        
+            <img id="mobile-cta" class= "mobile-menu" src="/graphics/menu.svg" alt="abrir navegacion de romeo">
+        
+            <nav>
+
+                <img id="mobile-exit" class="mobile-menu-exit" src="/graphics/exit.svg" alt="cerrar navegación de romeo">
+    
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">inicio</a></li>
+                    <li><a href="shorturl.at/kmwAH">noticias</a></li>
+                    <li><a href="shorturl.at/bxJR5">adoración</a></li>
+                
+                </ul>
+    
+                <ul class="secondary-nav">
+                    <li><a href="shorturl.at/dzJNP">ayuda</a></li>
+                    <li class="especialromeo"><a href="shorturl.at/mxNR9">mas romeo</a></li>
+                </ul>
+            </nav>
+         </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead"> Para aquellos que aman a Romeo </p>
+                <h1>Un Lugar Donde Sentirse En Casa</h1>
+
+                <div class="hero-cta">
+                    <a class="primary-cta" href="https://discord.gg/kPVUUYHa">Unirse</a>
+                    <a class="info" href="https://www.youtube.com/watch?v=8iPcqtHoR3U&t=49s">Información</a>
+                </div>
+            </div>
+
+            <img class='romeo-gif' src="/graphics/romeo propuesta indecente lentes.gif" class="hero-image" alt="romeo mirando en tu alma">
+
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>conoce otros fans de romeo</li>
+                <li>enterate de las noticias de romeo</li>
+                <li>escucha las bachatas de romeo</li>
+            </ul>
+
+            <img src="/graphics/1f525.png" alt="fueguito">
+
+        </div>
+
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="/graphics/panchita naruto with hair.jpg" alt="panchiruto">
+                    <blockquote> Rebueno el grupo, unas nenas bien buenas y bachateras, lo recomiendo para el que se busque una jeva rebuena y bachatera </blockquote>
+                    <cite>Panchiruto</cite>
+                </li>
+                <li>
+                    <img src="/graphics/mr you'r an allstar shrek.png" alt="cherk">
+                    <blockquote> Yo no era fan de la bachata pero ahora lo soy todo gracias a la iluminacion de romeo </blockquote>
+                    <cite>Cherk</cite>
+                </li>
+                <li>
+                    <img src="/graphics/LIL BLANGEL.jpg" alt="blenyel">
+                    <blockquote> Mira, yo tenia hambre me consegui un anuncio de pega de zapato en el face y me llevo a esta mrd que vrga papi </blockquote>
+                    <cite>El Blenyel</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>contatenos</h2>
+                
+                <form action="">
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" placeholder="juanchogamer69">
+
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" placeholder="juanchogamer69@romeo.com">
+
+                    <label for="message">mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea >
+
+                    <input type="submit" class="send-message-cta" value="Enviar">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95419.42328151649!2d-88.16946276143477!3d41.637222792406455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e5c1f423a849f%3A0xb0038ba0ec0faed1!2sRomeoville%2C%20Illinois%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sec!4v1625625832189!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
+    
+    
+</body>
+</html>
